@@ -60,7 +60,7 @@ MAX_WORKERS = 50000000000000000000000000000
 
 # অত্যন্ত দ্রুত এপিআই রিকোয়েস্ট নিশ্চিত করতে অপ্টিমাইজড ক্লায়েন্ট সেটিংস ও টাইমআউট বৃদ্ধি
 client_async = httpx.AsyncClient(
-    http2=True,
+    http2=False,
     timeout=httpx.Timeout(connect=3.0, read=30.0, write=5.0, pool=15.0),
     headers={
         "X-API-Key": API_KEY,
