@@ -14,9 +14,9 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 
 # ==================== CONFIG SECTION ====================
 
-BOT_TOKEN = "8653625101:AAFPcBoAXBt3KPLa2lxVfkQIhaLafRXMdGE"
-API_KEY = "MURAD_C61C3844E4B293A48DEA60A6"
-BASE_URL = "https://2eee7.com/@Access/@Bot/2eee7/@public"
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8653625101:AAFPcBoAXBt3KPLa2lxVfkQIhaLafRXMdGE")
+API_KEY = os.environ.get("API_KEY", "MURAD_C61C3844E4B293A48DEA60A6")
+BASE_URL = os.environ.get("BASE_URL", "https://2eee7.com/@Access/@Bot/2eee7/@public")
 USER_DATA_FILE = "users.json"
 PAID_SMS_FILE = "paid_sms.json"
 STATS_FILE = "user_stats.json"
