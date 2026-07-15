@@ -2,7 +2,7 @@ from flask import Flask
 from threading import Thread
 import os
 import asyncio
-from panel import main as bot_main
+from panelx import main as bot_main
 
 app = Flask(__name__)
 
